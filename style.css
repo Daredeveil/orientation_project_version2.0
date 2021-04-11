@@ -1,0 +1,399 @@
+        .navbar ul{
+            list-style: none;
+            background:lightgrey;
+            padding: 25px;
+            margin: 0;
+            text-align: center;
+        }
+        .navbar li{
+            display:inline-block; /* display list in a row*/
+        }
+        .navbar a{
+            text-decoration: none;
+            color: grey;
+            width: 100px;
+            padding: 25px 20px;
+            font-size:15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        .navbar a:hover{
+            color: black;
+            background-color: orange;
+            /*width: 100%;
+            height: auto;*/
+        }
+
+        .flex-home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: space-between;
+            background-image: url(airbus.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position:center;
+            background-size: 1500px auto;
+            padding: 0px;
+            margin: 0px;
+        }
+        .flex-item-biopic{
+            flex: 1;
+            background-color: none;
+            margin: 20px;
+            padding: 10px;
+            text-align: right;
+        }
+        .image_bio{
+            width:60%;
+            height: auto;
+            margin:5px;
+            border-radius: 500px;
+        }
+        .flex-item-1{
+            flex: 1;
+            background-color: none;
+            color: black;
+            margin: 20px;
+            padding: 10px;
+            text-align: left;
+        }
+        .flex-item-about{
+            flex: 1;
+            padding: 5px;
+            text-align: center;
+        }
+        .flex-item-summary{
+            height: auto;
+            margin-bottom: 200px;
+            text-align:center;
+        }
+
+        .flex-item-section{
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            border: rgb(250, 250, 250);
+            border-style:solid;
+        }
+        h2{
+            text-transform: uppercase;
+        }
+        
+        .flex-client{
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
+        .flex-item-client{
+            flex: 1;
+            background-color: none;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 10px 15px;
+        }
+        .image_client{
+            width:90%;
+            height: auto;
+            margin:5px;
+        }
+        .image_client_3{
+            width:70%;
+            height: 60%;
+            margin:5px;
+        }
+
+        .flex-skills{
+            background-image: url(airbus-10.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position:center;
+            background-size: 1500px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .flex-item-skills{
+            flex: 1;
+            background-color: none;
+            text-align: left;
+            margin: 20px;
+            padding: 10px 15px;
+        }
+        .flex-item-soft{
+            flex: 1;
+            text-align: center;
+            flex-flow:column wrap;
+            justify-content: space-between;
+            border: 2px solid black;
+            width: 85%;
+            height: auto;
+            background: rgb(129, 155, 185);
+            margin: 5px;
+            padding: 3px;
+        }
+
+        .flex-expert{
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
+        .flex-item-expert{
+            flex: 1.5;
+            background-color: none;
+            text-align: left;
+            margin: 20px;
+            padding: 10px 15px;
+        }
+
+/* Start creating Timeline for Work experience */
+        .timeline-container{
+            max-width: 500px;
+            margin: 0 auto;
+            border-left: 4px solid black;
+            padding-left: 25px;
+        }
+        .timeline-container .event{
+            box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.2);
+            padding: 32px;
+            margin: 48px 0;
+            line-height: 1.5;
+            position: relative;
+        }
+        .timeline-container .event::before{
+            content: "";
+            width: 14px;
+            height:  14px;
+            border: 2px solid black;
+            position: absolute;
+            left: -36px;
+            border-radius: 50%;
+            top: 50%;
+            background: white;
+        }
+        .timeline-container .event:hover::before{
+            background: red;
+        }
+        .timeline-container .event .event-date{
+            position: absolute;
+            left: -190px;
+            top: 50%;
+            font-weight: bold;
+        }
+/* End creating Timeline for Work experience */
+
+        section{
+            min-height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: rgb(250, 250, 250);
+            border-style: solid;
+        }
+        footer{
+            width: 100%;
+            background: lightgrey;
+            color: black;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            flex: 1;
+            margin: 50px;
+            min-width: 500px;
+        }
+        .box a{
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .box a i{
+            background: lightgrey;
+            width: 60px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 15px;
+            margin-top: 15px;
+            transition: 0.5s linear;
+        }
+        .box a:hover{
+            color: crimson;
+            border-radius: 50%;
+        }
+        .social{
+            margin-top: 5px;
+        }
+        form input, form textarea{
+            width: 100%;
+            min-height: 30px;
+            border: none;
+            outline: none;
+            padding-left: 5px;
+            margin-bottom: 10px;
+        }
+        span{
+            color: crimson;
+        }
+        form button{
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            background: crimson;
+            font-size: 1.3em;
+            cursor: pointer;
+        }
+        .author{
+            width: 100%;
+            background: grey;
+            text-align: center;
+            text-transform: uppercase;
+            overflow: hidden;
+        }
+
+
+        /* Start Media Query for mobile phone*/
+        @media (max-width:480px){
+            .navbar ul{
+                flex-direction: column;
+                width:90%;
+                font-size: 50px;
+            }
+            .flex-home{
+                flex-direction:column;
+                width:100%;
+                font-size: 15px;
+                background-size: auto;
+            }
+            .flex-item-about{
+                flex-direction:column;
+                width:100%;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .flex-item-summary{
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 50px;
+                text-align:center;
+            }
+            #Experience{
+                padding-bottom: -20px;
+                width: 100%;
+                text-align: center;
+                text-decoration-line: underline;
+            }
+            #Education, #Clients, #Skills, #Expertise{
+                padding-top: 50px;
+                width: 100%;
+                text-align: center;
+                text-decoration-line: underline;
+            }
+
+            .flex-item-section{
+                flex-direction:column;
+                width:90%;
+                border: none;
+                font-size: 18px;
+                text-align: center;
+            }
+            
+            .timeline-container{
+                flex-direction: cloumn;
+                width: 90%;
+                border: none;
+                font-size: 15px;
+                align-content:center;
+            }
+            .timeline-container .event{
+            box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.2);
+            padding: 32px;
+            margin: 0px;
+            line-height: 1.5;
+            position: relative;
+            }
+
+            .timeline-container .event::before{
+            content: none;
+            }
+            .timeline-container .event .event-date{
+            position:relative;
+            left: 0px;
+            font-weight: bold;
+            }
+
+            .flex-client{
+                flex-direction: row;
+                width: 100%;
+                text-align: left;
+            }
+            .flex-skills{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-size: auto;
+            }
+            .flex-skills{
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            .flex-item-expert{
+                box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.2);
+                line-height: 1.5;
+                flex-direction: column;
+                width: 100%;
+                text-align: left;
+            }
+            footer{
+                width: 100%;
+                background: lightgrey;
+                color: black;
+            }
+            section{
+                flex-direction:column;
+                width:100%;
+                border: none;
+                font-size: 15px;
+                text-decoration-line: underline;
+                text-align: center;
+            }
+            .container{
+                flex-direction:column;
+                width:100%;
+                text-align: left;
+            }
+
+            .box{
+                flex: 1;
+                margin: 30px;
+                min-width: 400px;
+            }
+
+            form input, form textarea{
+                width: 100%;
+                min-height: 30px;
+            }
+
+            form button{
+                width: 100%;
+                height: 40px;
+                background: crimson;
+            }
+            
+            .author{
+                flex-direction:column;
+                width: 100%;
+                font-size: 10px;
+                text-align: center;
+            } 
+        }
+        /* End of Media Query for mobile phone*/
